@@ -1,0 +1,9 @@
+C:\Users\Dilan Patel\Engineering45\CSharpGame\BoxJump\BoxJump\obj\Debug\BoxJump.csprojAssemblyReference.cache
+C:\Users\Dilan Patel\Engineering45\CSharpGame\BoxJump\BoxJump\obj\Debug\BoxJump.Form1.resources
+C:\Users\Dilan Patel\Engineering45\CSharpGame\BoxJump\BoxJump\obj\Debug\BoxJump.Properties.Resources.resources
+C:\Users\Dilan Patel\Engineering45\CSharpGame\BoxJump\BoxJump\obj\Debug\BoxJump.csproj.GenerateResource.cache
+C:\Users\Dilan Patel\Engineering45\CSharpGame\BoxJump\BoxJump\bin\Debug\BoxJump.exe.config
+C:\Users\Dilan Patel\Engineering45\CSharpGame\BoxJump\BoxJump\bin\Debug\BoxJump.exe
+C:\Users\Dilan Patel\Engineering45\CSharpGame\BoxJump\BoxJump\bin\Debug\BoxJump.pdb
+C:\Users\Dilan Patel\Engineering45\CSharpGame\BoxJump\BoxJump\obj\Debug\BoxJump.exe
+C:\Users\Dilan Patel\Engineering45\CSharpGame\BoxJump\BoxJump\obj\Debug\BoxJump.pdb
