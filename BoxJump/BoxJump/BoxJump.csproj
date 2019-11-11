@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Platform Game Assets\Background\png\1920x1080\Background\Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Platform Game Assets\Tiles\png\512x512\Grass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Update 1.9\New Tiles %282D view%29\Spring\128x128\Grass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Update 1.8\Character Animation\Idle\Blink\1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Platform Game Assets\Character\png\1x\Character.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Platform Game Assets\Chest\png\Chest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Platform Game Assets\Coin Animation\png\2x\Coin.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

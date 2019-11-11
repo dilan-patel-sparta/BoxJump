@@ -59,6 +59,13 @@ namespace BoxJump
 
         private void timer1_Tick_1(object sender, EventArgs e)
         {
+            if (player.Bounds.IntersectsWith(chest.Bounds))
+            {
+                timer1.Stop();
+                MessageBox.Show("Congratulations, you beat the level!");
+                this.Hide();
+
+            }
             player.Top += jumpSpeed;
             if (goUp && force < 0)
             {
@@ -93,6 +100,15 @@ namespace BoxJump
                     {
                         force = 8;
                         player.Top = x.Top - player.Height;
+                    }
+                }
+
+                if (x is PictureBox && x.Tag == "coin")
+                {
+                    if (player.Bounds.IntersectsWith(x.Bounds) && !goUp)
+                    {
+                        this.Controls.Remove(x);
+                        score++;
                     }
                 }
             }
