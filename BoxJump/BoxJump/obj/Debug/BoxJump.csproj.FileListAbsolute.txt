@@ -11,8 +11,11 @@ C:\Users\Dilan Patel\Engineering45\Project\BoxJump\BoxJump\bin\Debug\BoxJump.exe
 C:\Users\Dilan Patel\Engineering45\Project\BoxJump\BoxJump\bin\Debug\BoxJump.exe
 C:\Users\Dilan Patel\Engineering45\Project\BoxJump\BoxJump\bin\Debug\BoxJump.pdb
 C:\Users\Dilan Patel\Engineering45\Project\BoxJump\BoxJump\obj\Debug\BoxJump.csprojAssemblyReference.cache
-C:\Users\Dilan Patel\Engineering45\Project\BoxJump\BoxJump\obj\Debug\BoxJump.Form1.resources
 C:\Users\Dilan Patel\Engineering45\Project\BoxJump\BoxJump\obj\Debug\BoxJump.Properties.Resources.resources
 C:\Users\Dilan Patel\Engineering45\Project\BoxJump\BoxJump\obj\Debug\BoxJump.csproj.GenerateResource.cache
 C:\Users\Dilan Patel\Engineering45\Project\BoxJump\BoxJump\obj\Debug\BoxJump.exe
 C:\Users\Dilan Patel\Engineering45\Project\BoxJump\BoxJump\obj\Debug\BoxJump.pdb
+C:\Users\Dilan Patel\Engineering45\Project\BoxJump\BoxJump\obj\Debug\BoxJump.gameScreen.resources
+C:\Users\Dilan Patel\Engineering45\Project\BoxJump\BoxJump\obj\Debug\BoxJump.helpScreen.resources
+C:\Users\Dilan Patel\Engineering45\Project\BoxJump\BoxJump\obj\Debug\BoxJump.menuScreen.resources
+C:\Users\Dilan Patel\Engineering45\Project\BoxJump\BoxJump\obj\Debug\BoxJump.levelScreen.resources

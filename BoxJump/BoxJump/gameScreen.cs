@@ -7,10 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
+
+//trace.writeline("test");
+//debug.writeline("test2");
 
 namespace BoxJump
 {
-    public partial class Form1 : Form
+    public partial class gameScreen : Form
     {
         bool goLeft = false;
         bool goRight = false;
@@ -20,7 +24,7 @@ namespace BoxJump
         int force = 8;
         int score = 0;
 
-        public Form1()
+        public gameScreen()
         {
             InitializeComponent();
         }
@@ -92,22 +96,38 @@ namespace BoxJump
                 jumpSpeed = 12;
             }
 
-            foreach (Control x in this.Controls)
+            foreach (Control i in this.Controls)
             {
-                if (x is PictureBox && x.Tag == "floor")
+                if (i is PictureBox && i.Tag == "floor")
                 {
-                    if (player.Bounds.IntersectsWith(x.Bounds) && !goUp)
+                    if (player.Bounds.IntersectsWith(i.Bounds) && !goUp)
                     {
                         force = 8;
-                        player.Top = x.Top - player.Height;
+                        player.Top = i.Top - player.Height;
                     }
                 }
 
-                if (x is PictureBox && x.Tag == "coin")
+                if (i is PictureBox && i.Tag == "leftWall")
                 {
-                    if (player.Bounds.IntersectsWith(x.Bounds) && !goUp)
+                    if (player.Bounds.IntersectsWith(i.Bounds))
                     {
-                        this.Controls.Remove(x);
+                        player.Left = i.Left - player.Width;
+                    }
+                }
+
+                if (i is PictureBox && i.Tag == "rightWall")
+                {
+                    if (player.Bounds.IntersectsWith(i.Bounds))
+                    {
+                        player.Left = i.Left + player.Width;
+                    }
+                }
+
+                if (i is PictureBox && i.Tag == "coin")
+                {
+                    if (player.Bounds.IntersectsWith(i.Bounds) && !goUp)
+                    {
+                        this.Controls.Remove(i);
                         score++;
                     }
                 }

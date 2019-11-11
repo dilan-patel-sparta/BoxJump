@@ -46,16 +46,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="levelScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="levelScreen.Designer.cs">
+      <DependentUpon>levelScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gameScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gameScreen.Designer.cs">
+      <DependentUpon>gameScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="helpScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="helpScreen.Designer.cs">
+      <DependentUpon>helpScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuScreen.Designer.cs">
+      <DependentUpon>menuScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="levelScreen.resx">
+      <DependentUpon>levelScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gameScreen.resx">
+      <DependentUpon>gameScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helpScreen.resx">
+      <DependentUpon>helpScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuScreen.resx">
+      <DependentUpon>menuScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -100,6 +127,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\Platform Game Assets\Coin Animation\png\2x\Coin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Platform Game Assets\Text\Title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Platform Game Assets\Text\startButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Platform Game Assets\Text\helpButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Platform Game Assets\Text\selectLevel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Platform Game Assets\Text\easy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Platform Game Assets\Text\intermediate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Platform Game Assets\Text\hard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Platform Game Assets\Text\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Platform Game Assets\Background\png\1920x1080\Background\helpBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Platform Game Assets\Text\helpBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Platform Game Assets\Text\back.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

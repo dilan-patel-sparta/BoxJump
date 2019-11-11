@@ -1,6 +1,6 @@
 ﻿namespace BoxJump
 {
-    partial class Form1
+    partial class gameScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -53,6 +53,8 @@
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.leftWall = new System.Windows.Forms.PictureBox();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.floor)).BeginInit();
@@ -76,6 +78,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.leftWall)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             this.SuspendLayout();
             // 
             // player
@@ -83,9 +87,10 @@
             this.player.BackColor = System.Drawing.Color.Transparent;
             this.player.BackgroundImage = global::BoxJump.Properties.Resources.Character;
             this.player.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player.Location = new System.Drawing.Point(44, 778);
+            this.player.Location = new System.Drawing.Point(79, 767);
             this.player.Name = "player";
-            this.player.Size = new System.Drawing.Size(38, 38);
+            this.player.Size = new System.Drawing.Size(34, 39);
+            this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.player.TabIndex = 1;
             this.player.TabStop = false;
             this.player.Tag = "player";
@@ -113,7 +118,7 @@
             this.floor.BackColor = System.Drawing.Color.Beige;
             this.floor.BackgroundImage = global::BoxJump.Properties.Resources.Grass;
             this.floor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.floor.Location = new System.Drawing.Point(-68, 813);
+            this.floor.Location = new System.Drawing.Point(-68, 812);
             this.floor.Name = "floor";
             this.floor.Size = new System.Drawing.Size(2033, 44);
             this.floor.TabIndex = 7;
@@ -359,14 +364,36 @@
             this.pictureBox19.TabStop = false;
             this.pictureBox19.Tag = "coin";
             // 
-            // Form1
+            // leftWall
+            // 
+            this.leftWall.BackColor = System.Drawing.Color.SlateBlue;
+            this.leftWall.Location = new System.Drawing.Point(1483, -11);
+            this.leftWall.Name = "leftWall";
+            this.leftWall.Size = new System.Drawing.Size(1, 900);
+            this.leftWall.TabIndex = 28;
+            this.leftWall.TabStop = false;
+            this.leftWall.Tag = "leftWall";
+            // 
+            // pictureBox20
+            // 
+            this.pictureBox20.BackColor = System.Drawing.Color.SlateBlue;
+            this.pictureBox20.Location = new System.Drawing.Point(-3, -4);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(1, 900);
+            this.pictureBox20.TabIndex = 29;
+            this.pictureBox20.TabStop = false;
+            this.pictureBox20.Tag = "rightWall";
+            // 
+            // gameScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.BackgroundImage = global::BoxJump.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1482, 844);
+            this.ClientSize = new System.Drawing.Size(1415, 844);
+            this.Controls.Add(this.pictureBox20);
+            this.Controls.Add(this.leftWall);
             this.Controls.Add(this.pictureBox19);
             this.Controls.Add(this.pictureBox18);
             this.Controls.Add(this.pictureBox17);
@@ -392,7 +419,7 @@
             this.Controls.Add(this.player);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "Form1";
+            this.Name = "gameScreen";
             this.Text = "Form1";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyIsDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyIsUp);
@@ -419,6 +446,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.leftWall)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -448,6 +477,8 @@
         private System.Windows.Forms.PictureBox pictureBox17;
         private System.Windows.Forms.PictureBox pictureBox18;
         private System.Windows.Forms.PictureBox pictureBox19;
+        private System.Windows.Forms.PictureBox leftWall;
+        private System.Windows.Forms.PictureBox pictureBox20;
     }
 }
 
