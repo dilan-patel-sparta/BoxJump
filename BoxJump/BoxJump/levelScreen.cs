@@ -10,11 +10,24 @@ using System.Windows.Forms;
 
 namespace BoxJump
 {
-    public partial class levelScreen : Form
+    public partial class LevelScreen : Form
     {
-        public levelScreen()
+
+        
+        public LevelScreen()
         {
             InitializeComponent();
+        }
+
+        private void easyLevelClick(object sender, EventArgs e)
+        {
+            EasyLevel gameDisplay = new EasyLevel();
+            gameDisplay.Show();
+        }
+
+        private void intermediateLevelClick(object sender, EventArgs e)
+        {
+            
         }
     }
 }

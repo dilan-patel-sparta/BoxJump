@@ -10,25 +10,22 @@ using System.Windows.Forms;
 
 namespace BoxJump
 {
-    public partial class menuScreen : Form
+    public partial class MenuScreen : Form
     {
-        levelScreen levelDisplay = new levelScreen();
-        helpScreen helpDisplay = new helpScreen();
-        //gameScreen gameDisplay = new gameScreen();
 
-        public menuScreen()
+        public MenuScreen()
         {
             InitializeComponent();
         }
 
         private void startGame(object sender, EventArgs e)
         {
+            
+            LevelScreen levelDisplay = new LevelScreen();
+            //gamePanel.Controls.Add(levelDisplay);
             levelDisplay.Show();
         }
 
-        private void showHelp(object sender, EventArgs e)
-        {
-            helpDisplay.Show();
-        }
+        
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace BoxJump
 {
-    partial class gameScreen
+    partial class EasyLevel
     {
         /// <summary>
         /// Required designer variable.
@@ -42,8 +42,6 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.chest = new System.Windows.Forms.PictureBox();
             this.coin = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
@@ -55,6 +53,14 @@
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.leftWall = new System.Windows.Forms.PictureBox();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.scoreDisplay = new System.Windows.Forms.Label();
+            this.timerDisplay = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
+            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.floor)).BeginInit();
@@ -67,8 +73,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chest)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.coin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -80,6 +84,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.leftWall)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
             this.SuspendLayout();
             // 
             // player
@@ -225,43 +235,19 @@
             this.coin.BackColor = System.Drawing.Color.Transparent;
             this.coin.BackgroundImage = global::BoxJump.Properties.Resources.Coin;
             this.coin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.coin.Location = new System.Drawing.Point(360, 559);
+            this.coin.Location = new System.Drawing.Point(361, 569);
             this.coin.Name = "coin";
             this.coin.Size = new System.Drawing.Size(20, 20);
             this.coin.TabIndex = 16;
             this.coin.TabStop = false;
             this.coin.Tag = "coin";
             // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.BackgroundImage = global::BoxJump.Properties.Resources.Coin;
-            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox9.Location = new System.Drawing.Point(596, 379);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox9.TabIndex = 17;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Tag = "coin";
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox10.BackgroundImage = global::BoxJump.Properties.Resources.Coin;
-            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox10.Location = new System.Drawing.Point(719, 305);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox10.TabIndex = 18;
-            this.pictureBox10.TabStop = false;
-            this.pictureBox10.Tag = "coin";
-            // 
             // pictureBox11
             // 
             this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox11.BackgroundImage = global::BoxJump.Properties.Resources.Coin;
             this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox11.Location = new System.Drawing.Point(854, 384);
+            this.pictureBox11.Location = new System.Drawing.Point(854, 397);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(20, 20);
             this.pictureBox11.TabIndex = 19;
@@ -285,7 +271,7 @@
             this.pictureBox13.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox13.BackgroundImage = global::BoxJump.Properties.Resources.Coin;
             this.pictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox13.Location = new System.Drawing.Point(160, 455);
+            this.pictureBox13.Location = new System.Drawing.Point(160, 471);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(20, 20);
             this.pictureBox13.TabIndex = 21;
@@ -297,7 +283,7 @@
             this.pictureBox14.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox14.BackgroundImage = global::BoxJump.Properties.Resources.Coin;
             this.pictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox14.Location = new System.Drawing.Point(62, 334);
+            this.pictureBox14.Location = new System.Drawing.Point(61, 353);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(20, 20);
             this.pictureBox14.TabIndex = 22;
@@ -333,7 +319,7 @@
             this.pictureBox17.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox17.BackgroundImage = global::BoxJump.Properties.Resources.Coin;
             this.pictureBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox17.Location = new System.Drawing.Point(1061, 486);
+            this.pictureBox17.Location = new System.Drawing.Point(1065, 502);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(20, 20);
             this.pictureBox17.TabIndex = 25;
@@ -345,7 +331,7 @@
             this.pictureBox18.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox18.BackgroundImage = global::BoxJump.Properties.Resources.Coin;
             this.pictureBox18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox18.Location = new System.Drawing.Point(1031, 706);
+            this.pictureBox18.Location = new System.Drawing.Point(1032, 718);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(20, 20);
             this.pictureBox18.TabIndex = 26;
@@ -357,7 +343,7 @@
             this.pictureBox19.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox19.BackgroundImage = global::BoxJump.Properties.Resources.Coin;
             this.pictureBox19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox19.Location = new System.Drawing.Point(1311, 600);
+            this.pictureBox19.Location = new System.Drawing.Point(1311, 613);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(20, 20);
             this.pictureBox19.TabIndex = 27;
@@ -384,7 +370,103 @@
             this.pictureBox20.TabStop = false;
             this.pictureBox20.Tag = "rightWall";
             // 
-            // gameScreen
+            // scoreDisplay
+            // 
+            this.scoreDisplay.AutoSize = true;
+            this.scoreDisplay.BackColor = System.Drawing.Color.Transparent;
+            this.scoreDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scoreDisplay.ForeColor = System.Drawing.Color.Gold;
+            this.scoreDisplay.Location = new System.Drawing.Point(12, 9);
+            this.scoreDisplay.Name = "scoreDisplay";
+            this.scoreDisplay.Size = new System.Drawing.Size(110, 29);
+            this.scoreDisplay.TabIndex = 30;
+            this.scoreDisplay.Text = "Score: 0";
+            // 
+            // timerDisplay
+            // 
+            this.timerDisplay.AutoSize = true;
+            this.timerDisplay.BackColor = System.Drawing.Color.Transparent;
+            this.timerDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timerDisplay.ForeColor = System.Drawing.Color.SteelBlue;
+            this.timerDisplay.Location = new System.Drawing.Point(1152, 9);
+            this.timerDisplay.Name = "timerDisplay";
+            this.timerDisplay.Size = new System.Drawing.Size(165, 29);
+            this.timerDisplay.TabIndex = 31;
+            this.timerDisplay.Text = "Time Left: 40";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox9.BackgroundImage = global::BoxJump.Properties.Resources.Coin;
+            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox9.Location = new System.Drawing.Point(696, 321);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox9.TabIndex = 32;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Tag = "coin";
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox10.BackgroundImage = global::BoxJump.Properties.Resources.Coin;
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox10.Location = new System.Drawing.Point(549, 397);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox10.TabIndex = 33;
+            this.pictureBox10.TabStop = false;
+            this.pictureBox10.Tag = "coin";
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox21.BackgroundImage = global::BoxJump.Properties.Resources.Coin;
+            this.pictureBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox21.Location = new System.Drawing.Point(410, 353);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox21.TabIndex = 34;
+            this.pictureBox21.TabStop = false;
+            this.pictureBox21.Tag = "coin";
+            // 
+            // pictureBox22
+            // 
+            this.pictureBox22.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox22.BackgroundImage = global::BoxJump.Properties.Resources.Coin;
+            this.pictureBox22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox22.Location = new System.Drawing.Point(114, 156);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox22.TabIndex = 35;
+            this.pictureBox22.TabStop = false;
+            this.pictureBox22.Tag = "coin";
+            // 
+            // pictureBox23
+            // 
+            this.pictureBox23.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox23.BackgroundImage = global::BoxJump.Properties.Resources.Coin;
+            this.pictureBox23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox23.Location = new System.Drawing.Point(184, 668);
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox23.TabIndex = 36;
+            this.pictureBox23.TabStop = false;
+            this.pictureBox23.Tag = "coin";
+            // 
+            // pictureBox24
+            // 
+            this.pictureBox24.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox24.BackgroundImage = global::BoxJump.Properties.Resources.Coin;
+            this.pictureBox24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox24.Location = new System.Drawing.Point(502, 700);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox24.TabIndex = 37;
+            this.pictureBox24.TabStop = false;
+            this.pictureBox24.Tag = "coin";
+            // 
+            // EasyLevel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -392,6 +474,14 @@
             this.BackgroundImage = global::BoxJump.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1415, 844);
+            this.Controls.Add(this.pictureBox24);
+            this.Controls.Add(this.pictureBox23);
+            this.Controls.Add(this.pictureBox22);
+            this.Controls.Add(this.pictureBox21);
+            this.Controls.Add(this.pictureBox10);
+            this.Controls.Add(this.pictureBox9);
+            this.Controls.Add(this.timerDisplay);
+            this.Controls.Add(this.scoreDisplay);
             this.Controls.Add(this.pictureBox20);
             this.Controls.Add(this.leftWall);
             this.Controls.Add(this.pictureBox19);
@@ -403,8 +493,6 @@
             this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.pictureBox11);
-            this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.coin);
             this.Controls.Add(this.chest);
             this.Controls.Add(this.pictureBox8);
@@ -419,8 +507,10 @@
             this.Controls.Add(this.player);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "gameScreen";
-            this.Text = "Form1";
+            this.MaximumSize = new System.Drawing.Size(1433, 891);
+            this.MinimumSize = new System.Drawing.Size(1433, 891);
+            this.Name = "EasyLevel";
+            this.Text = "Box Jump";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyIsDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyIsUp);
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
@@ -435,8 +525,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chest)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.coin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
@@ -448,7 +536,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.leftWall)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -466,8 +561,6 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox chest;
         private System.Windows.Forms.PictureBox coin;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox13;
@@ -479,6 +572,14 @@
         private System.Windows.Forms.PictureBox pictureBox19;
         private System.Windows.Forms.PictureBox leftWall;
         private System.Windows.Forms.PictureBox pictureBox20;
+        private System.Windows.Forms.Label scoreDisplay;
+        private System.Windows.Forms.Label timerDisplay;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox21;
+        private System.Windows.Forms.PictureBox pictureBox22;
+        private System.Windows.Forms.PictureBox pictureBox23;
+        private System.Windows.Forms.PictureBox pictureBox24;
     }
 }
 

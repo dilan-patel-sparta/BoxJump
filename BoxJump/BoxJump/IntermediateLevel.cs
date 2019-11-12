@@ -7,15 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Diagnostics;
-
-//trace.writeline("test");
-//debug.writeline("test2");
 
 namespace BoxJump
 {
-    public partial class gameScreen : Form
+    public partial class IntermediateLevel : Form
     {
+
         bool goLeft = false;
         bool goRight = false;
         bool goUp = false;
@@ -23,8 +20,10 @@ namespace BoxJump
         int jumpSpeed = 10;
         int force = 8;
         int score = 0;
+        int gameTimeSeconds = 40;
+        //DateTime startTime;
 
-        public gameScreen()
+        public IntermediateLevel()
         {
             InitializeComponent();
         }
@@ -61,15 +60,8 @@ namespace BoxJump
             }
         }
 
-        private void timer1_Tick_1(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            if (player.Bounds.IntersectsWith(chest.Bounds))
-            {
-                timer1.Stop();
-                MessageBox.Show("Congratulations, you beat the level!");
-                this.Hide();
-
-            }
             player.Top += jumpSpeed;
             if (goUp && force < 0)
             {
@@ -104,31 +96,6 @@ namespace BoxJump
                     {
                         force = 8;
                         player.Top = i.Top - player.Height;
-                    }
-                }
-
-                if (i is PictureBox && i.Tag == "leftWall")
-                {
-                    if (player.Bounds.IntersectsWith(i.Bounds))
-                    {
-                        player.Left = i.Left - player.Width;
-                    }
-                }
-
-                if (i is PictureBox && i.Tag == "rightWall")
-                {
-                    if (player.Bounds.IntersectsWith(i.Bounds))
-                    {
-                        player.Left = i.Left + player.Width;
-                    }
-                }
-
-                if (i is PictureBox && i.Tag == "coin")
-                {
-                    if (player.Bounds.IntersectsWith(i.Bounds) && !goUp)
-                    {
-                        this.Controls.Remove(i);
-                        score++;
                     }
                 }
             }

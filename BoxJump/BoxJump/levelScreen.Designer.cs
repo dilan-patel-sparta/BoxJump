@@ -1,6 +1,6 @@
 ﻿namespace BoxJump
 {
-    partial class levelScreen
+    partial class LevelScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -61,6 +61,7 @@
             this.easyButton.Size = new System.Drawing.Size(218, 106);
             this.easyButton.TabIndex = 5;
             this.easyButton.UseVisualStyleBackColor = false;
+            this.easyButton.Click += new System.EventHandler(this.easyLevelClick);
             // 
             // intermediateButton
             // 
@@ -76,6 +77,7 @@
             this.intermediateButton.Size = new System.Drawing.Size(542, 106);
             this.intermediateButton.TabIndex = 6;
             this.intermediateButton.UseVisualStyleBackColor = false;
+            this.intermediateButton.Click += new System.EventHandler(this.intermediateLevelClick);
             // 
             // hardButton
             // 
@@ -92,7 +94,7 @@
             this.hardButton.TabIndex = 7;
             this.hardButton.UseVisualStyleBackColor = false;
             // 
-            // levelScreen
+            // LevelScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -102,7 +104,7 @@
             this.Controls.Add(this.intermediateButton);
             this.Controls.Add(this.easyButton);
             this.Controls.Add(this.Title);
-            this.Name = "levelScreen";
+            this.Name = "LevelScreen";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.Title)).EndInit();
             this.ResumeLayout(false);

@@ -1,6 +1,6 @@
 ﻿namespace BoxJump
 {
-    partial class menuScreen
+    partial class MenuScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.Start = new System.Windows.Forms.Button();
-            this.help = new System.Windows.Forms.Button();
             this.Title = new System.Windows.Forms.PictureBox();
+            this.gamePanel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.Title)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,23 +51,6 @@
             this.Start.UseVisualStyleBackColor = false;
             this.Start.Click += new System.EventHandler(this.startGame);
             // 
-            // help
-            // 
-            this.help.BackColor = System.Drawing.Color.Transparent;
-            this.help.BackgroundImage = global::BoxJump.Properties.Resources.helpButton;
-            this.help.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.help.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.help.FlatAppearance.BorderSize = 0;
-            this.help.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.help.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.help.ForeColor = System.Drawing.Color.Transparent;
-            this.help.Location = new System.Drawing.Point(656, 584);
-            this.help.Name = "help";
-            this.help.Size = new System.Drawing.Size(190, 83);
-            this.help.TabIndex = 2;
-            this.help.UseVisualStyleBackColor = false;
-            this.help.Click += new System.EventHandler(this.showHelp);
-            // 
             // Title
             // 
             this.Title.BackColor = System.Drawing.Color.Transparent;
@@ -80,16 +63,24 @@
             this.Title.TabStop = false;
             this.Title.Tag = "Title";
             // 
-            // menuScreen
+            // gamePanel
+            // 
+            this.gamePanel.BackgroundImage = global::BoxJump.Properties.Resources.Background;
+            this.gamePanel.Location = new System.Drawing.Point(0, -1);
+            this.gamePanel.Name = "gamePanel";
+            this.gamePanel.Size = new System.Drawing.Size(1484, 852);
+            this.gamePanel.TabIndex = 4;
+            // 
+            // MenuScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BoxJump.Properties.Resources.Background;
             this.ClientSize = new System.Drawing.Size(1482, 844);
             this.Controls.Add(this.Title);
-            this.Controls.Add(this.help);
             this.Controls.Add(this.Start);
-            this.Name = "menuScreen";
+            this.Controls.Add(this.gamePanel);
+            this.Name = "MenuScreen";
             this.Text = "menuScreen";
             ((System.ComponentModel.ISupportInitialize)(this.Title)).EndInit();
             this.ResumeLayout(false);
@@ -99,7 +90,7 @@
         #endregion
 
         private System.Windows.Forms.Button Start;
-        private System.Windows.Forms.Button help;
         private System.Windows.Forms.PictureBox Title;
+        private System.Windows.Forms.Panel gamePanel;
     }
 }
