@@ -130,6 +130,12 @@
   <data name="Grass" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\Platform Game Assets\Tiles\png\512x512\Grass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Chest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Platform Game Assets\Chest\png\Chest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Grass3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Update 1.9\Seasons Tiles (2.5D view)\Winter\128x128\Grass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="back" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\Platform Game Assets\Text\back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -148,8 +154,8 @@
   <data name="hard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\Platform Game Assets\Text\hard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="selectLevel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\Platform Game Assets\Text\selectLevel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1x1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="helpBackground1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\Platform Game Assets\Text\helpBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,8 +163,8 @@
   <data name="helpButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\Platform Game Assets\Text\helpButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Chest" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\Platform Game Assets\Chest\png\Chest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="selectLevel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Platform Game Assets\Text\selectLevel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="easy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\Platform Game Assets\Text\easy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,7 +181,7 @@
   <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\Platform Game Assets\Text\help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Grass3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\Update 1.9\Seasons Tiles (2.5D view)\Winter\128x128\Grass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="quit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Platform Game Assets\Text\quit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

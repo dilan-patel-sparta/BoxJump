@@ -46,32 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HardLevel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HardLevel.Designer.cs">
-      <DependentUpon>HardLevel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="IntermediateLevel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="IntermediateLevel.Designer.cs">
-      <DependentUpon>IntermediateLevel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GameLevel.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="LevelScreen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LevelScreen.Designer.cs">
       <DependentUpon>LevelScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="EasyLevel.cs">
+    <Compile Include="Game.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EasyLevel.Designer.cs">
-      <DependentUpon>EasyLevel.cs</DependentUpon>
+    <Compile Include="Game.Designer.cs">
+      <DependentUpon>Game.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuScreen.cs">
       <SubType>Form</SubType>
@@ -81,17 +66,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="HardLevel.resx">
-      <DependentUpon>HardLevel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="IntermediateLevel.resx">
-      <DependentUpon>IntermediateLevel.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="LevelScreen.resx">
       <DependentUpon>LevelScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EasyLevel.resx">
-      <DependentUpon>EasyLevel.cs</DependentUpon>
+    <EmbeddedResource Include="Game.resx">
+      <DependentUpon>Game.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuScreen.resx">
       <DependentUpon>MenuScreen.cs</DependentUpon>
@@ -178,6 +157,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\Update 1.9\Seasons Tiles %282.5D view%29\Winter\128x128\Grass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Platform Game Assets\Text\quit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

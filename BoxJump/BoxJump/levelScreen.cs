@@ -21,7 +21,7 @@ namespace BoxJump
 
         private void easyLevelClick(object sender, EventArgs e)
         {
-            EasyLevel gameDisplay = new EasyLevel();
+            Game gameDisplay = new Game();
             gameDisplay.Show();
         }
 
